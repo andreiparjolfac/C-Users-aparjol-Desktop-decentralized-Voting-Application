@@ -1,4 +1,4 @@
-require("@nomicfoundation/hardhat-toolbox");
+//require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 require("@nomiclabs/hardhat-ethers");
 
@@ -14,7 +14,7 @@ module.exports = {
       url:API_URL,
       accounts:[PRIVATE_KEY],
       gas:210000000,
-      gasPrice:800000000000,
+      gasPrice:2100000000,
     }
   }
 };

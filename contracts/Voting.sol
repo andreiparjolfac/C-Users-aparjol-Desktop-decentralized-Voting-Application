@@ -34,6 +34,8 @@ contract Voting {
         _;
     }
 
+   
+
     function addCandidate(string memory _name) public onlyOwner{
         candidates.push(Candidate({
             name:_name,

@@ -1,11 +1,11 @@
 const { ethers } = require("hardhat");
 
 async function main(){
-    const Contract = await ethers.getContractFactory("Voting");
+    const Contract = await ethers.getContractFactory("Transactions");
 
-    const Voting = await Contract.deploy(["Mark","Mike","Henry","Rock"],90);
+    const Transactions = await Contract.deploy();
 
-    console.log("Contract address: " , Voting.address);
+    console.log("Contract address: " , Transactions.address);
 }
 
 main().then(()=>process.exit(0)).catch(error=>{console.error(error);
